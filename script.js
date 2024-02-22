@@ -9,3 +9,8 @@ burgerMenu.addEventListener('click', function() {
         nav.style.display = 'none';
     }
 });
+
+function openMail() {
+    var emailAddress = "mattef91@hotmail.com"; // Set your pre-set email address here
+    window.location.href = "mailto:" + emailAddress;
+}

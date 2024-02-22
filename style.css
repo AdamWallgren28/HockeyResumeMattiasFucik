@@ -11,9 +11,6 @@ h1, h2, h3, h4, h5, h6, p {
     color: aqua;
     font-family:'Courier New', Courier, monospace;
 }
-h2 {margin: 1rem;}
-
-
 .hem:hover, .menyKnapp:hover, .menyKnapp2:hover, .burgarMeny:hover{
     color: white;
 }
@@ -42,6 +39,9 @@ header {
             padding: 0rem 1rem;
             justify-content: flex-end;
         }
+            .navBox h2 {
+                margin: 1rem;
+            }
             .menyKnapp, .hem{
                 margin: 1rem;
     
@@ -58,7 +58,7 @@ header {
     width: 75vw;
 }
             .introText {
-                padding-right: 2rem;
+                padding-left: 2rem;
             }
 
             #mailaMig {
@@ -77,7 +77,6 @@ header {
         }           
                 .picContainer{
                     border-radius: 2rem;
-                    margin-left: 1rem;
                     margin-top: 1rem;
                     overflow: hidden;
                     display: inline-block;
@@ -155,12 +154,23 @@ main {
                     padding: 16px;
                     border-radius: 16px;
                     background-color: aqua;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    
                 }
                 .projektRubriker{
                     height: 4rem;
                 }
-                .projektIkon {
-                    width: 20vw;
+                .projektIkon, iframe {
+                    width: 100%;
+                    box-sizing: border-box;
+                    border-radius: 1rem;
+                    min-height: 12rem;
+                    filter: grayscale(100%);
+                }
+                .projektKnapp {
+                    margin: 1rem 0;
                 }
 .contact {
     width: 65vw;
@@ -208,7 +218,7 @@ footer {
     .menyKnapp2 {padding: 0 2rem;}
 
     .introDiv{
-        flex-direction: column-reverse;
+        flex-direction: column;
         margin: 0 1rem 1rem 1rem;
     }
         .introText {padding-right: 0rem;}
@@ -239,7 +249,5 @@ footer {
             .projektRubriker{
                 height: auto;
             }
-            .projektIkon {
-                width: 35vw;
-            }
+            
 }
