@@ -111,7 +111,7 @@ header {
                 }
    
 main {    
-    background-color: grey;
+    background: linear-gradient(to bottom, darkgrey, black), url("hockeyBackground.jpg");
     display: flex;
     flex-direction: column;
     align-items: center;    
@@ -147,7 +147,7 @@ main {
                 align-self: flex-start;
                }
                 .projekt {
-                    padding: 16px 32px;
+                    padding: 2rem;
                     border-radius: 16px;
                     background-color: aqua;
                     display: flex;
@@ -190,13 +190,21 @@ main {
 .contact {
     width: 75vw;
     border-style: solid;
-    border-color: aqua;
+    border-width: 1px;
+    border-color: black;
     border-radius: 2rem;
-    margin: 2rem 0;
-    padding: 2rem 0;
+    margin: 8rem 2rem 1rem 2rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+}
+.contact p {
+    margin: 2rem 2rem 1rem 2rem;
 
+}
+#mailaMig {
+    align-self: flex-end;
+    margin: 0rem 2rem 6rem 2rem;
 }
         
 
@@ -255,5 +263,9 @@ footer {
             .projektRubriker{
                 height: auto;
             }
-            
+    
+            #mailaMig {
+                
+                margin: 0rem 2rem 2rem 2rem;
+            }
 }
