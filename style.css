@@ -111,17 +111,7 @@ main {
     align-items: center;    
 }
 
-.skillsBox {
-    width: 75vw;
-    margin-top: 3rem;
-}
-        .skills {
-            color: black;
-            background-color: aqua;
-            padding: 1rem;
-            border-radius: 1rem;
-        }
-        .skillsText, .projektRubriker, .projektText {
+.projektRubriker, .projektText {
             color: black;
         }
         
@@ -148,7 +138,6 @@ main {
         }
                .projektRubrik {
                 align-self: flex-start;
-                margin-left: 12,5vw;
                }
                 .projekt {
                     padding: 16px;
@@ -159,10 +148,9 @@ main {
                     justify-content: flex-start;
                     
                 }
-                .projektRubriker{
-                    height: 4rem;
-                }
+                
                 .projektIkon, iframe {
+                    margin: 1rem 0;
                     width: 100%;
                     box-sizing: border-box;
                     border-radius: 1rem;
@@ -173,7 +161,7 @@ main {
                     margin: 1rem 0;
                 }
 .contact {
-    width: 65vw;
+    width: 75vw;
     border-style: solid;
     border-color: gray;
     border-radius: 2rem;
