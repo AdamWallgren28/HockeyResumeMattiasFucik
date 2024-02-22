@@ -65,10 +65,16 @@ header {
                 background-color: aqua;
                 height: 3rem;
                 border-radius: 1.5rem;
+                border-width: 5px;
                 width: 8rem;
                 margin-top: 2rem;
             }
-            #mailaMig:hover{background-color: white;}
+            #mailaMig:hover{background-color: aquamarine}
+            #mailaMig:active{
+                color: white;
+                
+            }
+
 
 
             .bildBox {
@@ -127,39 +133,60 @@ main {
 }
     .projektBox {
         width: 75vw;
+        
     }
         .minaProjekt {
             width: 75vw;
-            padding: 2rem 0;
+            padding: 4rem 0;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: auto;
-            gap: 1rem;
+            gap: 2rem;
         }
                .projektRubrik {
                 align-self: flex-start;
                }
                 .projekt {
-                    padding: 16px;
+                    padding: 16px 32px;
                     border-radius: 16px;
                     background-color: aqua;
                     display: flex;
                     flex-direction: column;
-                    justify-content: flex-start;
+                    
                     
                 }
-                
-                .projektIkon, iframe {
-                    margin: 1rem 0;
-                    width: 100%;
-                    box-sizing: border-box;
-                    border-radius: 1rem;
-                    min-height: 12rem;
-                    filter: grayscale(100%);
-                }
-                .projektKnapp {
-                    margin: 1rem 0;
-                }
+                    .projektIkon, iframe {
+                        margin: 1rem 0;
+                        width: 100%;
+                        box-sizing: border-box;
+                        border-radius: 1rem;
+                        min-height: 12rem;
+                        filter: grayscale(50%);
+                    }
+                        .knappar {
+                            margin-bottom: 1rem;
+                        }
+                        .projektKnapp {
+                            margin: 1rem 0;
+                        }
+                        .projectLink {
+
+                            font-family:Arial, Helvetica, sans-serif;
+                            font-size:medium;
+                            background-color: lightgrey;
+                            color: black;
+                            padding: 6px 12px;
+                            border-style: solid;
+                            border-color:grey black black grey;
+                            border-width: 2px;
+                            border-radius: 18px;
+                            text-decoration: none;
+                        }
+                        .projectLink:hover {background-color: hsl(0, 0%, 90%);}
+                        .projectLink:active {
+                            color: white;
+                            border-color: black grey grey black ;
+                        }
 .contact {
     width: 75vw;
     border-style: solid;
@@ -232,7 +259,7 @@ footer {
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto;
-        gap: 1rem;
+        gap: 2rem;
     }
             .projektRubriker{
                 height: auto;
