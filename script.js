@@ -11,6 +11,6 @@ burgerMenu.addEventListener('click', function() {
 });
 
 function openMail() {
-    var emailAddress = "mattef91@hotmail.com"; // Set your pre-set email address here
+    var emailAddress = "mattef91@hotmail.com"; 
     window.location.href = "mailto:" + emailAddress;
 }

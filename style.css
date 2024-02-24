@@ -23,6 +23,7 @@ header {
     justify-content: center;
     align-items: center;
 }
+
     nav {
         position: sticky;
         top: 0;
@@ -110,7 +111,8 @@ header {
                     100% {transform: translateY(600%);}
                 }
    
-main {    
+main {   
+    width: 100vw; 
     background: linear-gradient(to bottom, lightgrey, black), url("hockeyBackground.jpg");
     display: flex;
     flex-direction: column;
