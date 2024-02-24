@@ -3,7 +3,7 @@ body {
     flex-direction: column;
     margin: 0;
 }
-
+a {text-decoration: none;}
 h1 {
     font-size: xx-large;
 }
@@ -103,11 +103,11 @@ header {
                     height: 50%;
                     z-index: 1;
                     background: linear-gradient(to top, hsla(0, 0%, 100%, 0.75), transparent);
-                    animation: slide 3s infinite;
+                    animation: slide 5s infinite;
                 }
                 @keyframes slide {
                     0% {transform: translateY(-300%);}
-                    100% {transform: translateY(100%);}
+                    100% {transform: translateY(600%);}
                 }
    
 main {    
@@ -217,6 +217,34 @@ footer {
     background-color: black;
     padding: 1rem 12.5vw 2rem 12.5vw;
 }
+
+.cvLinks {
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.cvLinks a {
+    color: black;
+    height: 2.5rem;
+    min-width: 2.5rem;
+    margin-right: 1rem;
+    background-color: aqua;
+    border-radius: 3rem;
+    border-style: solid;
+    border-radius: 1rem;
+    border-color: grey;
+    border-width: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+    .cvLinks a:nth-child(1){
+padding: 0 0.5rem;
+    }
+    .cvLinkImg {
+        width: 2rem;
+    }
 
 @media screen and (max-width: 750px) {
     .meny {display: none;}
