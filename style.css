@@ -11,105 +11,71 @@ h1, h2, h3, h4, h5, h6, p {
     color: aqua;
     font-family:'Courier New', Courier, monospace;
 }
-.hem:hover, .menyKnapp:hover, .menyKnapp2:hover, .burgarMeny:hover{
-    color: white;
-}
+
 
 header {
-    padding: 4rem;
+    padding: 8rem 4rem 4rem 4rem;
     background: linear-gradient(to bottom, black, darkgrey);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-    nav {
-        position: sticky;
-        top: 0;
-        z-index: 2;
-        height: 4rem;
-        background-color: black;
+} 
+    .introDiv {
         display: flex;
-        justify-content: space-between;
+        margin: 1rem;
+        width: 75vw;
     }
-    
-        .meny {
-            width: 60vw;
-            display: flex;
-            padding: 0rem 1rem;
-            justify-content: flex-end;
-        }
-            .navBox h2 {
-                margin: 1rem;
-            }
-            .menyKnapp, .hem{
-                margin: 1rem;
-    
-            }
-        #burgerMenu, .navBox {
-            display: none;
-        }
-        
-
-    
-.introDiv {
-    display: flex;
-    margin: 1rem;
-    width: 75vw;
-}
-            .introText {
-                padding-left: 2rem;
-            }
-
-            #mailaMig {
-                background-color: aqua;
-                height: 3rem;
-                border-radius: 1.5rem;
-                border-width: 5px;
-                width: 8rem;
-                margin-top: 2rem;
-            }
-            #mailaMig:hover{background-color: aquamarine}
-            #mailaMig:active{
-                color: white;
-                
-            }
-
-
-
-            .bildBox {
-                display: flex;
-                justify-content: center;
-        }           
-                .picContainer{
-                    border-radius: 2rem;
-                    margin-top: 1rem;
-                    overflow: hidden;
-                    display: inline-block;
-                    position: relative;
+                .introText {
+                    padding-left: 2rem;
                 }
+                    #mailaMig {
+                        background-color: aqua;
+                        height: 3rem;
+                        border-radius: 1.5rem;
+                        border-width: 5px;
+                        width: 8rem;
+                        margin-top: 2rem;
+                    }
+                    #mailaMig:hover{background-color: aquamarine}
+                    #mailaMig:active{
+                        color: white;
+                        
+                    }
 
-                .profilBild, .picContainer {
-                    width: 18vw;
-                    height: 23vw;
-                    filter: grayscale(100%);
-                }
 
-                .filterBild {
-                    position: absolute;
-                    top: 50%;
-                    left: 0;
-                    width: 100%; 
-                    height: 50%;
-                    z-index: 1;
-                    background: linear-gradient(to top, hsla(0, 0%, 100%, 0.75), transparent);
-                    animation: slide 5s infinite;
-                }
-                @keyframes slide {
-                    0% {transform: translateY(-300%);}
-                    100% {transform: translateY(600%);}
-                }
+                .bildBox {
+                    display: flex;
+                    justify-content: center;
+                }           
+                    .picContainer{
+                        border-radius: 2rem;
+                        margin-top: 1rem;
+                        overflow: hidden;
+                        display: inline-block;
+                        position: relative;
+                    }
+
+                    .profilBild, .picContainer {
+                        width: 18vw;
+                        height: 23vw;
+                        filter: grayscale(100%);
+                    }
+
+                    .filterBild {
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        width: 100%; 
+                        height: 50%;
+                        z-index: 1;
+                        background: linear-gradient(to top, hsla(0, 0%, 100%, 0.75), transparent);
+                        animation: slide 5s infinite;
+                    }
+                    @keyframes slide {
+                        0% {transform: translateY(-300%);}
+                        100% {transform: translateY(600%);}
+                    }
    
 main {   
     width: 100vw; 
@@ -118,77 +84,75 @@ main {
     flex-direction: column;
     align-items: center;    
 }
-
-.projektRubriker, .projektText {
-            color: black;
-        }
-        
-
-.projectSection {
-    background-color: black;
-    width: 100vw;
-    padding-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-    .projektBox {
-        width: 75vw;
-        
+   
+    .projectSection {
+        background-color: black;
+        width: 100vw;
+        padding-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-        .minaProjekt {
-            width: 75vw;
-            padding: 4rem 0;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: auto;
-            gap: 2rem;
+        .projektBox {
+            width: 75vw; 
         }
-               .projektRubrik {
+            .projektRubrik {
                 align-self: flex-start;
-               }
-                .projekt {
-                    padding: 2rem;
-                    border-radius: 16px;
-                    background-color: aqua;
-                    display: flex;
-                    flex-direction: column;
-                    
-                    
-                }
-                    .projektIkon, iframe {
-                        margin: 1rem 0;
-                        width: 100%;
-                        box-sizing: border-box;
-                        border-radius: 1rem;
-                        min-height: 12rem;
-                        filter: grayscale(50%);
-                    }
-                        .knappar {
-                            margin-bottom: 1rem;
-                        }
-                        .projektKnapp {
-                            margin: 1rem 0;
-                        }
-                        .projectLink {
+            }
+            .minaProjekt {
+                width: 75vw;
+                padding: 4rem 0;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: auto;
+                gap: 2rem;
+            }
 
-                            font-family:Arial, Helvetica, sans-serif;
-                            font-size:medium;
-                            background-color: lightgrey;
+            
+               
+                    .projekt {
+                        padding: 2rem;
+                        border-radius: 16px;
+                        background-color: aqua;
+                        display: flex;
+                        flex-direction: column;    
+                    }
+                        .projektRubriker, .projektText {
                             color: black;
-                            padding: 6px 12px;
-                            border-style: solid;
-                            border-color:grey black black grey;
-                            border-width: 2px;
-                            border-radius: 18px;
-                            text-decoration: none;
                         }
-                        .projectLink:hover {background-color: hsl(0, 0%, 90%);}
-                        .projectLink:active {
-                            color: white;
-                            border-color: black grey grey black ;
+                        .projektIkon, iframe {
+                            margin: 1rem 0;
+                            width: 100%;
+                            box-sizing: border-box;
+                            border-radius: 1rem;
+                            min-height: 12rem;
+                            filter: grayscale(50%);
                         }
+                            .knappar {
+                                margin-bottom: 1rem;
+                            }
+                            .projektKnapp {
+                                margin: 1rem 0;
+                            }
+                            .projectLink {
+
+                                font-family:Arial, Helvetica, sans-serif;
+                                font-size:medium;
+                                background-color: lightgrey;
+                                color: black;
+                                padding: 6px 12px;
+                                border-style: solid;
+                                border-color:grey black black grey;
+                                border-width: 2px;
+                                border-radius: 18px;
+                                text-decoration: none;
+                            }
+                            .projectLink:hover {background-color: hsl(0, 0%, 90%);}
+                            .projectLink:active {
+                                color: white;
+                                border-color: black grey grey black ;
+                            }
 .contact {
     width: 75vw;
     border-style: solid;
@@ -200,14 +164,13 @@ main {
     flex-direction: column;
     justify-content: center;
 }
-.contact p {
-    margin: 2rem 2rem 1rem 2rem;
-
-}
-#mailaMig {
-    align-self: flex-end;
-    margin: 0rem 2rem 6rem 2rem;
-}
+    .contact p {
+        margin: 2rem 2rem 1rem 2rem;
+    }
+    #mailaMig {
+        align-self: flex-end;
+        margin: 0rem 2rem 6rem 2rem;
+    }
         
 
 footer {
@@ -215,7 +178,6 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
     background-color: black;
     padding: 1rem 12.5vw 2rem 12.5vw;
 }
@@ -223,55 +185,30 @@ footer {
 .cvLinks {
     display: flex;
     justify-content: flex-start;
-    
 }
-.cvLinks a {
-    color: black;
-    height: 2.5rem;
-    min-width: 2.5rem;
-    margin-right: 1rem;
-    background-color: aqua;
-    border-radius: 3rem;
-    border-style: solid;
-    border-radius: 1rem;
-    border-color: grey;
-    border-width: 1px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-    .cvLinks a:nth-child(1){
-padding: 0 0.5rem;
+    .cvLinks a {
+        color: black;
+        height: 2.5rem;
+        min-width: 2.5rem;
+        margin-right: 1rem;
+        background-color: aqua;
+        border-radius: 3rem;
+        border-style: solid;
+        border-radius: 1rem;
+        border-color: grey;
+        border-width: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
     }
-    .cvLinkImg {
-        width: 2rem;
-    }
+        .cvLinks a:nth-child(1){
+            padding: 0 0.5rem;
+        }
+        .cvLinkImg {
+            width: 2rem;
+        }
 
 @media screen and (max-width: 750px) {
-    .meny {display: none;}
-    
-    #burgerMenu {
-        position: absolute;
-        right: 0;
-        z-index: 4;
-        padding: 0 1rem;
-        display: flex;
-        justify-content: flex-start;
-    }
-    .navBox {
-        display: none;
-        position: absolute;
-        top: 0;
-        right: 0;
-        margin:0;
-        border-style: solid;
-        border-width: 1px;
-        border-bottom-left-radius: 2rem;
-        background-color: grey;
-    }
-    .menyKnapp2 {padding: 0 2rem;}
-
     .introDiv{
         flex-direction: column;
         margin: 0 1rem 1rem 1rem;
@@ -286,7 +223,6 @@ padding: 0 0.5rem;
         
         }
   
-
     .minaProjekt {
         width: 75vw;
         padding: 2rem 0;
@@ -295,12 +231,12 @@ padding: 0 0.5rem;
         grid-template-rows: auto;
         gap: 2rem;
     }
-            .projektRubriker{
-                height: auto;
-            }
-    
-            #mailaMig {
-                
-                margin: 0rem 2rem 2rem 2rem;
-            }
+        .projektRubriker{
+            height: auto;
+        }
+
+        #mailaMig {
+            
+            margin: 0rem 2rem 2rem 2rem;
+        }
 }
