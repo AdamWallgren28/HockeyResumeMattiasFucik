@@ -107,12 +107,9 @@ main {
                 grid-template-columns: repeat(3, 1fr);
                 grid-template-rows: auto;
                 gap: 2rem;
-            }
-
-            
-               
+            }            
                     .projekt {
-                        padding: 2rem;
+                        padding: 2rem 1rem;
                         border-radius: 16px;
                         background-color: aqua;
                         display: flex;
@@ -160,12 +157,14 @@ main {
     border-color: black;
     border-radius: 2rem;
     margin: 8rem 2rem 1rem 2rem;
+
+
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
     .contact p {
-        margin: 2rem 2rem 1rem 2rem;
+        margin: 2rem 2rem 1rem 1rem;
     }
     #mailaMig {
         align-self: flex-end;
