@@ -218,8 +218,7 @@ footer {
         margin: 0 1rem 1rem 1rem;
     }
         .introText {
-            padding-right: 0rem;
-            padding-left: 2rem;
+            padding-left: 0rem;
         }
         .picContainer, .profilBild {
             width: 36vw;
