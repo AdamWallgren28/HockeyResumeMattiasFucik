@@ -185,6 +185,9 @@ footer {
     background-color: black;
     padding: 1rem 12.5vw 2rem 12.5vw;
 }
+    footer p {
+        padding: 0 1rem;
+    }
 
 .cvLinks {
     display: flex;
