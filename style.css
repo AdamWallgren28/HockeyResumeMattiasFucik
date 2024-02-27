@@ -1,3 +1,4 @@
+/* global styling*/
 body {
     display: flex;
     flex-direction: column;
@@ -27,59 +28,59 @@ header {
         margin: 1rem;
         width: 75vw;
     }
-                .introText {
-                    padding-left: 2rem;
+        .introText {
+            padding-left: 2rem;
+        }
+            #mailaMig {
+                background-color: aqua;
+                height: 3rem;
+                border-radius: 1.5rem;
+                border-width: 5px;
+                width: 8rem;
+                align-self: flex-start;
+                margin: 0rem 2rem 6rem 1rem;
+            }
+            /* Tar bort hover från mobil */
+            @media screen and (min-width: 750px) {
+                #mailaMig:hover{background-color: rgba(211, 211, 211, 0.75);
                 }
-                    #mailaMig {
-                        background-color: aqua;
-                        height: 3rem;
-                        border-radius: 1.5rem;
-                        border-width: 5px;
-                        width: 8rem;
-                        margin-top: 2rem;
-                    }
-                    @media screen and (min-width: 750px) {
-                        #mailaMig:hover{background-color: rgba(211, 211, 211, 0.75);
-                        }
-                    }
-                    #mailaMig:active{
-                        color: white;
-                        
-                    }
+            }
+            #mailaMig:active{
+                color: white;
+                
+            }
 
-
-                .bildBox {
-                    display: flex;
-                    justify-content: center;
-                }           
-                    .picContainer{
-                        border-radius: 2rem;
-                        margin-top: 1rem;
-                        overflow: hidden;
-                        display: inline-block;
-                        position: relative;
-                    }
-
-                    .profilBild, .picContainer {
-                        width: 18vw;
-                        height: 23vw;
-                        filter: grayscale(100%);
-                    }
-
-                    .filterBild {
-                        position: absolute;
-                        top: 50%;
-                        left: 0;
-                        width: 100%; 
-                        height: 50%;
-                        z-index: 1;
-                        background: linear-gradient(to top, hsla(0, 0%, 100%, 0.75), transparent);
-                        animation: slide 5s infinite;
-                    }
-                    @keyframes slide {
-                        0% {transform: translateY(-300%);}
-                        100% {transform: translateY(600%);}
-                    }
+        .bildBox {
+            display: flex;
+            justify-content: center;
+        }           
+            .picContainer{
+                border-radius: 2rem;
+                margin-top: 1rem;
+                overflow: hidden;
+                display: inline-block;
+                position: relative;
+            }
+            .profilBild, .picContainer {
+                width: 18vw;
+                height: 23vw;
+                filter: grayscale(100%);
+            }
+            /* Scan-effekt */
+            .filterBild {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 100%; 
+                height: 50%;
+                z-index: 1;
+                background: linear-gradient(to top, hsla(0, 0%, 100%, 0.75), transparent);
+                animation: slide 5s infinite;
+            }
+            @keyframes slide {
+                0% {transform: translateY(-300%);}
+                100% {transform: translateY(600%);}
+            }
    
 main {   
     width: 100vw; 
@@ -88,7 +89,6 @@ main {
     flex-direction: column;
     align-items: center;    
 }
-   
     .projectSection {
         background-color: black;
         width: 100vw;
@@ -112,50 +112,49 @@ main {
                 grid-template-rows: auto;
                 gap: 2rem;
             }            
-                    .projekt {
-                        padding: 2rem 1rem;
-                        border-radius: 16px;
-                        background-color: aqua;
-                        display: flex;
-                        flex-direction: column;    
+                .projekt {
+                    padding: 2rem 1rem;
+                    border-radius: 16px;
+                    background-color: aqua;
+                    display: flex;
+                    flex-direction: column;    
+                }
+                    .projektRubriker, .projektText {
+                        color: black;
                     }
-                        .projektRubriker, .projektText {
-                            color: black;
+                    .projektIkon, iframe {
+                        margin: 1rem 0;
+                        width: 100%;
+                        box-sizing: border-box;
+                        border-radius: 1rem;
+                        min-height: 12rem;
+                        filter: grayscale(50%);
+                    }
+                        .knappar {
+                            margin-bottom: 1rem;
                         }
-                        .projektIkon, iframe {
+                        .projektKnapp {
                             margin: 1rem 0;
-                            width: 100%;
-                            box-sizing: border-box;
-                            border-radius: 1rem;
-                            min-height: 12rem;
-                            filter: grayscale(50%);
                         }
-                            .knappar {
-                                margin-bottom: 1rem;
-                            }
-                            .projektKnapp {
-                                margin: 1rem 0;
-                            }
-                            .projectLink {
-
-                                font-family:Arial, Helvetica, sans-serif;
-                                font-size:medium;
-                                background-color: lightgrey;
-                                color: black;
-                                padding: 6px 12px;
-                                border-style: solid;
-                                border-color:grey black black grey;
-                                border-width: 2px;
-                                border-radius: 18px;
-                                text-decoration: none;
-                            }
-                            @media screen and (min-width: 750px) {
-                                .projectLink:hover {background-color: hsl(0, 0%, 90%);}
-                            }
-                            .projectLink:active {
-                                color: white;
-                                border-color: black grey grey black ;
-                            }
+                        .projectLink {
+                            font-family:Arial, Helvetica, sans-serif;
+                            font-size:medium;
+                            background-color: lightgrey;
+                            color: black;
+                            padding: 6px 12px;
+                            border-style: solid;
+                            border-color:grey black black grey;
+                            border-width: 2px;
+                            border-radius: 18px;
+                            text-decoration: none;
+                        }
+                        @media screen and (min-width: 750px) {
+                            .projectLink:hover {background-color: hsl(0, 0%, 90%);}
+                        }
+                        .projectLink:active {
+                            color: white;
+                            border-color: black grey grey black ;
+                        }
 .contact {
     width: 75vw;
     border-style: solid;
@@ -163,8 +162,6 @@ main {
     border-color: black;
     border-radius: 2rem;
     margin: 8rem 2rem 1rem 2rem;
-
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -172,12 +169,7 @@ main {
     .contact p {
         margin: 2rem 1rem 2rem 1rem;
         align-self: flex-start;
-    }
-    #mailaMig {
-        align-self: flex-start;
-        margin: 0rem 2rem 6rem 1rem;
-    }  
-        
+    }     
 
 footer {
     display: flex;
@@ -230,6 +222,9 @@ footer {
             height: 46vw;
         
         }
+        #mailaMig {
+            margin: 0rem 2rem 2rem 2rem;
+        }
   
     .minaProjekt {
         width: 75vw;
@@ -243,8 +238,5 @@ footer {
             height: auto;
         }
 
-        #mailaMig {
-            
-            margin: 0rem 2rem 2rem 2rem;
-        }
+    
 }
